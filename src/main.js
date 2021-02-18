@@ -1,4 +1,14 @@
-import { createApp } from 'vue'
+import {
+    createApp
+} from 'vue'
 import App from './App.vue'
+import LoginPage from './components/LoginPage.vue'
+import './theme.css'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+//global 
+
+app.component('login-page', LoginPage)
+
+app.mount('#app')
